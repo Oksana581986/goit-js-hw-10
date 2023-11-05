@@ -12,6 +12,7 @@ const loader = document.querySelector('.loader');
 const errorElement = document.querySelector('.error');
 const URL = `https://api.thecatapi.com/v1`;
 
+
 fetch('https://api.thecatapi.com/v1/breeds')
     .then(response => {
         if (!response.ok) {
