@@ -20,9 +20,9 @@ fetch('https://api.thecatapi.com/v1/breeds')
         }
         return response.json();
     })
-    .then(breeds => {
+   .then(breeds => {
       hideLoader();
-      breeds.forEach(breed => {
+      breeds.forEach((breed) => {
       const option = document.createElement('option');
       option.value = breed.id;
       option.textContent = breed.name;
@@ -57,7 +57,7 @@ fetch('https://api.thecatapi.com/v1/breeds')
 
           breedSelect.addEventListener('change', () => {
           const selectedBreedId = breedSelect.value;
-          if (selectedBreedId) {
+            if (selectedBreedId) {
             showLoader();
             fetchCatByBreed(selectedBreedId)
               .then(response => {
@@ -78,3 +78,9 @@ fetch('https://api.thecatapi.com/v1/breeds')
   }
 });
      
+
+        
+        
+        
+        
+        
